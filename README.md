@@ -12,6 +12,10 @@ Welcome to the first TGIFHacks workshop for AY 20/21. This workshop will give yo
 - [CSS](#CSS)
     - [Overview](#CSS-Overview)
     - [Syntax](#Syntax)
+    - [Selector, property, value](#Selector,-property,-value)
+- [JavaScript](#JavaScript)
+    - [JavaScript Overview](#JavaScript-Overview)
+    - [Variables](#Variables)
 
 ## Prerequisites
 
@@ -122,7 +126,7 @@ There are way too many properties and values in css, you can check them out [her
 
 JavaScript provides the functionality of our web page. It make the webpage interactive. It is a high level programming language.
 
-### Overview
+### JavaScript Overview
 Just like css, javascript also has to be linked to our html. We can do this in 2 different ways:
 
 1. We can specify our script within the **script** tags and place this inside our html document:
