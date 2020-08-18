@@ -2,11 +2,31 @@
 
 Welcome to the first TGIFHacks workshop for AY 20/21. This workshop will give you a brief introduction to front-end web development. You will learn the 3 most important building blocks of the web: HTML, CSS, JavaScript. After that, you will be introduced to what APIs are. This will open up countless posibilities for you to build exciting and amazing web apps. So let's get started!
 
+## Table of Contents
+- [Prerequisites](#Prerequisites)
+- [HTML](#HTML)
+    - [Overview](#HTML-Overview)
+    - [Tags](#Tags)
+    - [Attributes](#Attributes)
+    - [Classes and IDs](#Classes-and-IDs)
+- [CSS](#CSS)
+    - [Overview](#CSS-Overview)
+    - [Syntax](#Syntax)
+
+## Prerequisites
+
+Before you start the workshop, make sure you have these:
+
++ A text editor such as Sublime Text or Notepad++
++ An internet browser greater than IE9 or Firefox 4
+
+>That's all you need!
+
 ## HTML
 
 HTML (Hyper Text Markup Language) is the skeleton of a web page. It tells the browser the structure of the web page.
 
-### Overview
+### HTML Overview
 A HTML document starts with the html tags. Everything that has to be in the web page has to be inside the html tags. Additionally, inside the html tags, we can see 2 **main** sections.
 ```HTML
 <html>
@@ -60,7 +80,7 @@ We can specify a class and/or id for a tag. These can be thought of as special a
 
 CSS (Cascading Style Sheets) forms the style of our page. It tells the browser how we want our page to be styled. CSS is what make a website look pretty!
 
-### Overview
+### CSS Overview
 The css we write has to be linked to our html for our browser to render the styles. We can do this in 3 different ways:
 
 1. We can specify style as an **attribute** in our html tags. For example:
