@@ -16,6 +16,18 @@ Welcome to the first TGIFHacks workshop for AY 20/21. This workshop will give yo
 - [JavaScript](#JavaScript)
     - [JavaScript Overview](#JavaScript-Overview)
     - [Variables](#Variables)
+    - [Conditional Statements](#Conditional-Statements)
+    - [Comparison and logical operators](#Comparison-and-logical-operators)
+        - [Comparison](#Comparison)
+        - [Logical](#Logical)
+    - [Loops](#Loops)
+        - [For loops](#For-loops)
+        - [While loops](#While-loops)
+    - [Functions](#Functions)
+    - [DOM](#DOM)
+        - [DOM Methods](#DOM-Methods)
+        - [The innerHTML property](#The-innerHTML-property)
+
 
 ## Prerequisites
 
