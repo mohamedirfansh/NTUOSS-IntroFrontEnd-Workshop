@@ -283,7 +283,7 @@ API (Application Programming Interface) is software intermediary that allows for
 We need weather data for our weather app. However, we cannot be sending our satellites to space to collect data for us. Other people have already done that. All we need is to collect the information from them. This is where an API comes in. Our application will talk to the weather API to _fetch_ data and return it to us for us to use.
 
 ### Using APIs
-So, for us collect data from the API, we need to fetch data from it. The API that we will be using today is a simple _keyless_ API called **FCC Weather API**. The url is: `https://fcc-weather-api.glitch.me/api/current?lat=latitude&lon=longitude`. We need to **fetch** data from the url, **return** it to a usable format like json, then execute some functions that we want to do with the data.
+So, for us to collect data from the API, we need to fetch data from it. The API that we will be using today is a simple _keyless_ API called **FCC Weather API**. The url is: `https://fcc-weather-api.glitch.me/api/current?lat=latitude&lon=longitude`. We need to **fetch** data from the url, **return** it to a usable format like json, then execute some functions that we want to do with the data.
 ```javascript
 var api = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
 
