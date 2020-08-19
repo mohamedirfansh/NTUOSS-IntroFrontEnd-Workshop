@@ -23,7 +23,6 @@ window.onload = function() {
                 temperatureValue.innerHTML = temp + '°C';
                 locationTimezone.textContent = location;
             })
-
         })
     }
 }
