@@ -1,6 +1,14 @@
 # Intro to Front End Development and APIs - NTUOSS Workshop
 
+by [Mohamed Irfan](https://github.com/mohamedirfansh) for [NTU Open Source Society](https://ntuoss.com/home)
+> Disclaimer: This document is only meant to serve as a reference for the attendees of the workshop. It does not cover all the concepts or implementation details discussed during the actual workshop. Moreover, this workshop is meant to serve as an introduction. There are a lot more things to learn in Front End Development.
+
 Welcome to the first TGIFHacks workshop for AY 20/21. This workshop will give you a brief introduction to front-end web development. You will learn the 3 most important building blocks of the web: HTML, CSS, JavaScript. After that, you will be introduced to what APIs are. This will open up countless posibilities for you to build exciting and amazing web apps. So let's get started!
+
+## Workshop Details:
+**Time**: Friday, 28 August 2020. 6:30pm - 8:30pm  
+**Location**: Virtual _(due to safe distancing measures)_  
+**Organizer**: NTU Open Source Society  
 
 ## Table of Contents
 - [Prerequisites](#Prerequisites)
@@ -27,6 +35,10 @@ Welcome to the first TGIFHacks workshop for AY 20/21. This workshop will give yo
     - [DOM](#DOM)
         - [DOM Methods](#DOM-Methods)
         - [The innerHTML property](#The-innerHTML-property)
+- [Build a Weather App](#Buil-a-Weather-App)
+- [APIs](#APIs)
+    - [Why APIs](#Why-APIs)
+    - [Using APIs](#Using-APIs)
 
 
 ## Prerequisites
@@ -255,3 +267,31 @@ We can then change the content of our p tag by using the `.innerHTML` property l
 ```javascript
 document.querySelector("#testing").innerHTML = "Hello World!";
 ```
+
+## Build a Weather App
+We will be using our knowledge of HTML, CSS and JavaScript to build a simple weather app. Afterwhich, we will come back and learn a bit on APIs and apply that knowledge to finish our project. You can access the source of the app in this repo.
+
+![Weather App](images/weather-app.png)
+
+## APIs
+
+API (Application Programming Interface) is software intermediary that allows for 2 applications to talk to each other while creating a layer of abstraction for each application.
+> API is a large topic, we will get a taste of what it is today.
+
+### Why APIs
+We need weather data for our weather app. However, we cannot be sending our satellites to space to collect data for us. Other people have already done that. All we need is to collect the information from them. This is where an API comes in. Our application will talk to the weather API to _fetch_ data and return it to us for us to use.
+
+### Using APIs
+So, for us collect data from the API, we need to fetch data from it. The API that we will be using today is a simple _keyless_ API called FCC Weather API. The url is: `https://fcc-weather-api.glitch.me/api/current?lat=latitude&lon=longitude`. We need to **fetch** data from the url, **return** it to a usable format like json, then execute some functions that we want to do with the data.
+```javascript
+var api = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
+
+fetch(api)
+.then(response => {
+    return response.json();
+})
+.then(data => {
+    console.log(data);
+})
+```
+So, here we are receiving data from the API, we return the response in json format and log the data to our console. We can then do a lot more with the data. Now, let's finish the weather app!
