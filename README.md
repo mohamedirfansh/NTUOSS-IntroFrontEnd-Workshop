@@ -269,7 +269,8 @@ document.querySelector("#testing").innerHTML = "Hello World!";
 ```
 
 ## Build a Weather App
-We will be using our knowledge of HTML, CSS and JavaScript to build a simple weather app. Afterwhich, we will come back and learn a bit on APIs and apply that knowledge to finish our project. You can access the source of the app in this repo.
+We will be using our knowledge of HTML, CSS and JavaScript to build a simple weather app. Afterwhich, we will come back and learn a bit on APIs and apply that knowledge to finish our project. You can access the source code of the app in this repo. You can try using the app [here](https://mohamedirfansh.github.io/NTUOSS-IntroFrontEnd-Workshop/).
+> Note: Since the API we will be using is free and does not require a key, it is a little buggy when it receives an overload of requests. You will occassionally see Shuzenji as your location. Ignore it and continue refreshing. Your correct location will appear.
 
 ![Weather App](images/weather-app.png)
 
@@ -295,3 +296,8 @@ fetch(api)
 })
 ```
 So, here we are receiving data from the API, we return the response in json format and log the data to our console. We can then do a lot more with the data. Now, let's finish the weather app!
+
+## Conclusion & Going Forward
+I hope you found this workshop useful. This workshop definitely did not cover all aspects of Front End Development. But I designed it to give you a brief introduction to the world of Web Development. Additionally, we only learned a very small aspect of APIs. There a lot more to learn such as creating your own APIs etc.  
+
+Since you have now been introduced to the Front End side of web development, be sure to look out for the Back End workshop organized by NTUOSS in the future! Until then, stay safe and happy hacking!
