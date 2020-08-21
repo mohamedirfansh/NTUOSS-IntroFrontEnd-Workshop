@@ -7,7 +7,7 @@ Welcome to the first TGIFHacks workshop for AY 20/21. This workshop will give yo
 
 ## Workshop Details:
 **Time**: Friday, 28 August 2020. 6:30pm - 8:30pm  
-**Location**: Virtual _(due to safe distancing measures)_  
+**Location**: Virtual through Microsoft Teams _(due to safe distancing measures)_  
 **Organizer**: NTU Open Source Society  
 
 ## Table of Contents
