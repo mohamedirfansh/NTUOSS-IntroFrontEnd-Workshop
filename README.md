@@ -175,7 +175,7 @@ var z = x + y;
 > Note: JavaScript is not a statically typed language. So there is no need to declare the data type.
 
 ### Conditional Statements
-Conditional statements are used to perform different actions based on different conditions. In JavaScript the look like this:
+Conditional statements are used to perform different actions based on different conditions. In JavaScript they look like this:
 ```javascript
 if (x > 10) {
   console.log("x is greater than 10");
@@ -221,7 +221,7 @@ while (i < 5){
     i++;
 }
 ```
-The `while` loop loops through a block of code as long as the specified condition is true. While loops take in a condition (i < 5) which will be checked everytime the loop is executed. Moreover, we need to update the value of the variable we are checking (_i_ as above) to make sure the loop terminated. Otherwise, we will have an **infinite** loop.
+The `while` loop loops through a block of code as long as the specified condition is true. While loops take in a condition (i < 5) which will be checked everytime the loop is executed. Moreover, we need to update the value of the variable we are checking (_i_ as above) to make sure the loop terminates. Otherwise, we will have an **infinite** loop.
 
 ### Functions
 Functions are **self contained** modules of code that accomplish a specific task. The function is executed when something invokes it. In JavaScript, functions can be declared in a few ways. We will focus on the following way:
@@ -231,7 +231,7 @@ function add(a, b) {
   return a + b;
 }
 ```
-We first type the `function` keyword, followed by the name of our function (_add_ as above) and specify the **parameters** the function can take. We then add curly braces {} and write our block of code inside it. We can the invoke (call) the function like this:
+We first type the `function` keyword, followed by the name of our function (_add_ as above) and specify the **parameters** the function can take. We then add curly braces {} and write our block of code inside it. We can then invoke (call) the function like this:
 
 ```javascript
 var x = add(10, 20);
@@ -240,7 +240,11 @@ We type the name of the function and pass it **arguments** (_10 & 20_ as above).
 
 ### DOM
 
-DOM (Document Object Model) is how JavaScript can access and change all the elements of an HTML document. Whenever, a webpage is loaded, the browser creates a **DOM** of the page. With the DOM, JavaScript can manipulate all the HTML and CSS contents of the webpage. It can:
+DOM (Document Object Model) is how JavaScript can access and change all the elements of an HTML document. Whenever, a webpage is loaded, the browser creates a **DOM** of the page. 
+
+![DOM](images/dom.png)
+
+The DOM represents a document with a logical tree structure where in each node is an object representing a part of the document. With the DOM, JavaScript can manipulate all the HTML and CSS contents of the webpage. It can:
 
 + Change all the HTML elements in the page
 + Change all the HTML attributes in the page
@@ -276,11 +280,11 @@ We will be using our knowledge of HTML, CSS and JavaScript to build a simple wea
 
 ## APIs
 
-API (Application Programming Interface) is software intermediary that allows for 2 applications to talk to each other while creating a layer of abstraction for each application.
+API (Application Programming Interface) is a software intermediary that allows 2 applications to talk to each other while creating a layer of abstraction for each application.
 > API is a large topic, we will get a taste of what it is today.
 
 ### Why APIs
-We need weather data for our weather app. However, we cannot be sending our satellites to space to collect data for us. Other people have already done that. All we need is to collect the information from them. This is where an API comes in. Our application will talk to the weather API to _fetch_ data and return it to us for us to use.
+We need weather data for our weather app. However, we cannot be sending satellites to space to collect data for us. Other people have already done that. All we need is to collect the information from them. This is where an API comes in. Our application will talk to the weather API to _fetch_ data and return it to us for us to use.
 
 ### Using APIs
 So, for us to collect data from the API, we need to fetch data from it. The API that we will be using today is a simple _keyless_ API called **FCC Weather API**. The url is: `https://fcc-weather-api.glitch.me/api/current?lat=latitude&lon=longitude`. We need to **fetch** data from the url, **return** it to a usable format like json, then execute some functions that we want to do with the data.
@@ -295,7 +299,7 @@ fetch(api)
     console.log(data);
 })
 ```
-So, here we are receiving data from the API, we return the response in json format and log the data to our console. We can then do a lot more with the data. Now, let's finish the weather app!
+So here, we are receiving data from the API, we return the response in json format and log the data to our console. We can then do a lot more with the data. Now, let's finish the weather app!
 
 ## Conclusion & Going Forward
 I hope you found this workshop useful. This workshop definitely did not cover all aspects of Front End Development. But I designed it to give you a brief introduction to the world of Web Development. Furthermore, we only learned a very small aspect of APIs. There is still a lot more to learn such as creating your own APIs etc.  
